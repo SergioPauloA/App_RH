@@ -18,7 +18,7 @@ import pyperclip
 class WhatsAppSenderApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("Gabi - WhatsApp Sender")
+        self.root.title("Valkyrie.Bot")
         self.root.geometry("700x750")  # Aumentei um pouco a altura
         self.root.configure(bg='#1e1e1e')
 
@@ -68,7 +68,7 @@ class WhatsAppSenderApp:
         main_frame.pack(expand=True, fill='both', padx=20, pady=20)
 
         # Título
-        titulo_label = tk.Label(main_frame, text="Gabi - WhatsApp Sender", 
+        titulo_label = tk.Label(main_frame, text= f"Bem vindo {self.usuario_logado.title()}", 
                                 font=("Arial", 16, "bold"), 
                                 bg=self.colors['bg'], 
                                 fg=self.colors['fg'])
@@ -99,12 +99,12 @@ class WhatsAppSenderApp:
         
         # Campo de texto para mensagem
         self.mensagem_text = tk.Text(main_frame, 
-                                     height=10, 
+                                     height=18, 
                                      width=80, 
                                      bg=self.colors['highlight_bg'], 
                                      fg=self.colors['fg'], 
                                      wrap=tk.WORD)
-        self.mensagem_text.pack(pady=5, expand=True, fill='x')
+        self.mensagem_text.pack(pady=(15, 5), expand=True, fill='x')  # Aumenta o espaço acima
 
         # Frame para botões
         botoes_frame = tk.Frame(main_frame, bg=self.colors['bg'])
