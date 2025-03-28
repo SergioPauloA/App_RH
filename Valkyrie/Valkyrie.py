@@ -1,13 +1,13 @@
 import tkinter as tk
 from tkinter import messagebox, scrolledtext, simpledialog
 from selenium import webdriver
-from selenium.webdriver.edge.service import Service
-from selenium.webdriver.edge.options import Options as EdgeOptions
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.chrome.options import Options as ChromeOptions
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from webdriver_manager.microsoft import EdgeChromiumDriverManager
+from webdriver_manager.chrome import ChromeDriverManager
 import threading
 import time
 from datetime import datetime
@@ -212,9 +212,9 @@ class WhatsAppSenderApp:
     def _login_thread(self):
         try:
             # Configurar WebDriver
-            opt = EdgeOptions()
-            service = Service(EdgeChromiumDriverManager().install())
-            self.driver = webdriver.Edge(service=service, options=opt)
+            opt = ChromeOptions()
+            service = Service(ChromeDriverManager().install())
+            self.driver = webdriver.Chrome(service=service, options=opt)
 
             self.log("Abrindo WhatsApp Web...")
             
