@@ -1,4 +1,4 @@
-# <img src="https://via.placeholder.com/40/1e1e1e/ffffff?text=V" alt="V" width="28"/> Valkyrie.Bot - WhatsApp Business Messenger
+# Valkyrie.Bot - WhatsApp Business Messenger
 
 [![Python 3.7+](https://img.shields.io/badge/Python-3.7+-blue?logo=python)](https://python.org)
 [![Selenium 4.0+](https://img.shields.io/badge/Selenium-4.0+-orange?logo=selenium)](https://selenium.dev)
