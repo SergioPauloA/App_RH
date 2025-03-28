@@ -21,7 +21,7 @@ class WhatsAppSenderApp:
         self.root.title("Valkyrie.Bot")
         self.root.geometry("700x750")  # Aumentei um pouco a altura
         self.root.configure(bg='#1e1e1e')
-        self.root.iconbitmap(r"C:\Users\sergio.andrade\Documents\Python\Valkyrie.ico")
+        self.root.iconbitmap(r"C:\Users\sergio.andrade\Documents\Valkyrie\Valkyrie.ico")
 
         # Cores do tema
         self.colors = {
